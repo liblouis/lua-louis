@@ -17,6 +17,7 @@ Makefile.in
 /config.status
 /configure
 /libtool
+/lua-louis-*.tar.gz
 /stamp-h1
 
 /build-aux/compile
