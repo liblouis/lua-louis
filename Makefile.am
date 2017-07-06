@@ -2,7 +2,7 @@ SUBDIRS = gnulib examples
 
 ACLOCAL_AMFLAGS = -I m4 -I gnulib/m4
 
-lib_LTLIBRARIES = liblua-louis.la
+luaexec_LTLIBRARIES = liblua-louis.la
 
 AM_CPPFLAGS =					\
 	-I$(top_srcdir)/gnulib			\
