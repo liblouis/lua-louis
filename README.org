@@ -12,6 +12,24 @@ Currently they are highly experimental, pull requests are welcome.
               ~widechar~.
 - lua :: needs to be installed. Any version between 5.1 and 5.4 will do.
 
+* Usage
+#+BEGIN_SRC lua
+local louis = require "liblua-louis"
+
+print(louis.translate("de-ch-g2.ctb", "Guten Tag"))
+#+END_SRC
+
+* Todo
+- [ ] cover the whole liblouis API
+- [ ] Make the bindings more idiomatic
+  - use a table as an input, so that we have named and optional
+    arguments.
+  - return the auximiary results such as in- and output positions as
+    [[http://www.lua.org/pil/5.1.html][multiple results]].
+- [ ] add bindings to [[https://luarocks.org/][LuaRocks]]
+- [ ] split the bindings into a low level C API and a sugar coated Lua
+  API, which will provide more idiomatic bindings.
+
 * License
 The bindings are released under [[https://www.gnu.org/licenses/lgpl-3.0.en.html][LGPLv3+]].
 
