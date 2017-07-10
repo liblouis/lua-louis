@@ -44,5 +44,6 @@ AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([
 	Makefile
 	examples/Makefile
-	gnulib/Makefile])
+	gnulib/Makefile
+	lua-louis.rockspec])
 AC_OUTPUT

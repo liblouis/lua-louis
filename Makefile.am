@@ -16,6 +16,18 @@ liblua_louis_la_LIBADD =			\
 
 liblua_louis_la_SOURCES = lua_louis.c
 
+# generate a rockspec file
+MD5SUM = md5sum
+ROCKSPEC = $(PACKAGE)-$(VERSION)-1.rockspec
+
+$(ROCKSPEC): $(PACKAGE).rockspec dist
+	sed -e 's/@MD5@/'`$(MD5SUM) $(distdir).tar.gz | \
+	cut -d " " -f 1`'/g' < $(PACKAGE).rockspec > $@
+
+EXTRA_DIST = $(PACKAGE).rockspec.in
+
+DISTCLEANFILES = $(PACKAGE).rockspec
+
 # support for git-version-gen
 EXTRA_DIST = $(top_srcdir)/.version
 BUILT_SOURCES = $(top_srcdir)/.version

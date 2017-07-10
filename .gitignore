@@ -18,6 +18,7 @@ Makefile.in
 /configure
 /libtool
 /lua-louis-*.tar.gz
+/lua-louis.rockspec
 /stamp-h1
 
 /build-aux/compile
