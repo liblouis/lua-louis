@@ -35,8 +35,6 @@ License along with liblouis. If not, see <http://www.gnu.org/licenses/>.
 #define from_utf8(input, inputlen, outlen) u8_to_u16(input, inputlen, NULL, outlen)
 #endif
 
-const char version_etc_copyright[] = "Copyright %s %d Swiss Library for the Blind, Visually Impaired and Print Disabled";
-
 static int lua_lou_version (lua_State *L) {
   lua_pushstring(L, lou_version());
   return 1;
