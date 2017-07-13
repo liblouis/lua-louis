@@ -19,7 +19,7 @@ EXTRA_DIST = $(PACKAGE).rockspec.in
 DISTCLEANFILES = $(PACKAGE).rockspec
 
 # support for git-version-gen
-EXTRA_DIST = $(top_srcdir)/.version
+EXTRA_DIST += $(top_srcdir)/.version
 BUILT_SOURCES = $(top_srcdir)/.version
 $(top_srcdir)/.version:
 	echo $(VERSION) > $@-t && mv $@-t $@
