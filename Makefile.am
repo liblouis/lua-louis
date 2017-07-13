@@ -1,5 +1,8 @@
 SUBDIRS = gnulib src examples
 
+if HAVE_LUADOC
+SUBDIRS += doc
+endif
 
 ACLOCAL_AMFLAGS = -I m4 -I gnulib/m4
 

@@ -42,3 +42,6 @@ Makefile.in
 /gnulib/unistr.h
 /gnulib/unistr/.dirstamp
 /gnulib/unitypes.h
+
+/doc/index.html
+/doc/ldoc.css

@@ -25,6 +25,9 @@ AX_PROG_LUA(5.1, 5.4)
 AX_LUA_HEADERS
 AC_PROG_LIBTOOL
 
+AC_CHECK_PROGS([LUADOC], [ldoc])
+AM_CONDITIONAL([HAVE_LUADOC], [test x$LUADOC = xldoc])
+
 # Check for header files
 AC_HEADER_STDC
 AC_CHECK_HEADERS([liblouis/liblouis.h], [], [
@@ -46,5 +49,6 @@ AC_CONFIG_FILES([
 	examples/Makefile
 	gnulib/Makefile
 	src/Makefile
+	doc/Makefile
 	lua-louis.rockspec])
 AC_OUTPUT
