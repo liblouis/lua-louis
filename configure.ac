@@ -45,5 +45,6 @@ AC_CONFIG_FILES([
 	Makefile
 	examples/Makefile
 	gnulib/Makefile
+	src/Makefile
 	lua-louis.rockspec])
 AC_OUTPUT
