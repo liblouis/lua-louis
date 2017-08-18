@@ -19,6 +19,10 @@ License along with liblouis. If not, see <http://www.gnu.org/licenses/>.
 
 */
 
+/*** liblouis bindings for Lua
+Very basic liblouis bindings for Lua
+@module louis
+ */
 #include <config.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -35,11 +39,24 @@ License along with liblouis. If not, see <http://www.gnu.org/licenses/>.
 #define from_utf8(input, inputlen, outlen) u8_to_u16(input, inputlen, NULL, outlen)
 #endif
 
+/***
+Return version string of liblouis
+@function version
+@treturn string the version string of liblouis
+*/
 static int lua_lou_version (lua_State *L) {
   lua_pushstring(L, lou_version());
   return 1;
 }
 
+/***
+Translate a string to braille
+@function translateString
+@tparam string tables a comma separated list of tables to use for the translation
+@tparam string input the text to translate
+@treturn string the translated braille
+@raise 'Braille translation failed' if the translation fails
+*/
 static int lua_lou_translateString (lua_State *L) {
   const char *tableList = luaL_checkstring(L, 1);
   const char *input = luaL_checkstring(L, 2);
