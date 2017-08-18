@@ -20,16 +20,8 @@ print(louis.translateString("de-ch-g2.ctb", "Guten Tag"))
 #+END_SRC
 
 * Todo
-- [ ] cover the whole liblouis API
-- [ ] Make the bindings more idiomatic
-  - use a table as an input, so that we have named and optional
-    arguments.
-  - return the auximiary results such as in- and output positions as
-    [[http://www.lua.org/pil/5.1.html][multiple results]].
-- [ ] add bindings to [[https://luarocks.org/][LuaRocks]]
-- [ ] split the bindings into a low level C API and a sugar coated Lua
-  API, which will provide more idiomatic bindings.
-- [X] integrate with ldoc
+  See [[https://github.com/liblouis/lua-louis/issues][the issue list]]. Mostly the bindings should be more complete and
+  idiomatic. Pull request are certainly very welcome.
 
 * License
 The bindings are released under [[https://www.gnu.org/licenses/lgpl-3.0.en.html][LGPLv3+]].
