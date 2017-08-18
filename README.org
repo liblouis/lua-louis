@@ -16,7 +16,7 @@ Currently they are highly experimental, pull requests are welcome.
 #+BEGIN_SRC lua
 local louis = require "liblua-louis"
 
-print(louis.translate("de-ch-g2.ctb", "Guten Tag"))
+print(louis.translateString("de-ch-g2.ctb", "Guten Tag"))
 #+END_SRC
 
 * Todo
@@ -29,6 +29,7 @@ print(louis.translate("de-ch-g2.ctb", "Guten Tag"))
 - [ ] add bindings to [[https://luarocks.org/][LuaRocks]]
 - [ ] split the bindings into a low level C API and a sugar coated Lua
   API, which will provide more idiomatic bindings.
+- [X] integrate with ldoc
 
 * License
 The bindings are released under [[https://www.gnu.org/licenses/lgpl-3.0.en.html][LGPLv3+]].
