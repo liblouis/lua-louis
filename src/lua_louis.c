@@ -82,13 +82,13 @@ static int lua_lou_translateString (lua_State *L) {
   return 1; 
 }
 
-static const struct luaL_reg lua_louis [] = {
+static const struct luaL_reg louis [] = {
   {"version", lua_lou_version},
-  {"translate", lua_lou_translateString},
+  {"translateString", lua_lou_translateString},
   {NULL, NULL}  /* sentinel */
 };
 
 int luaopen_louis (lua_State *L) {
-  luaL_openlib(L, "louis", lua_louis, 0);
+  luaL_openlib(L, "louis", louis, 0);
   return 1;
 }
