@@ -1,5 +1,3 @@
-EXTRA_DIST = louis.lua
-
 luaexec_LTLIBRARIES = liblua-louis.la
 
 AM_CPPFLAGS =					\
