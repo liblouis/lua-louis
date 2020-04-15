@@ -20,6 +20,7 @@ License along with liblouis. If not, see <http://www.gnu.org/licenses/>.
 */
 
 /*** liblouis bindings for Lua
+
 Very basic liblouis bindings for Lua
 @module louis
  */
