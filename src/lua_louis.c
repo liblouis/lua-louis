@@ -83,7 +83,7 @@ static int lua_lou_translateString (lua_State *L) {
   return 1; 
 }
 
-static const struct luaL_reg louis [] = {
+static const struct luaL_Reg louis [] = {
   {"version", lua_lou_version},
   {"translateString", lua_lou_translateString},
   {NULL, NULL}  /* sentinel */
