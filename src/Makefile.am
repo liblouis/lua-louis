@@ -1,4 +1,4 @@
-luaexec_LTLIBRARIES = liblua-louis.la
+lib_LTLIBRARIES = liblua-louis.la
 
 AM_CPPFLAGS =					\
 	-I$(top_srcdir)/gnulib			\
