@@ -1,5 +1,5 @@
 # DO NOT EDIT! GENERATED AUTOMATICALLY!
-# Copyright (C) 2002-2017 Free Software Foundation, Inc.
+# Copyright (C) 2002-2020 Free Software Foundation, Inc.
 #
 # This file is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -12,7 +12,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this file.  If not, see <http://www.gnu.org/licenses/>.
+# along with this file.  If not, see <https://www.gnu.org/licenses/>.
 #
 # As a special exception to the GNU General Public License,
 # this file may be distributed as part of a program that
@@ -44,7 +44,6 @@ AC_DEFUN([gl_EARLY],
   AC_REQUIRE([AM_PROG_CC_C_O])
   # Code from module absolute-header:
   # Code from module errno:
-  # Code from module git-version-gen:
   # Code from module include_next:
   # Code from module inline:
   # Code from module limits-h:
@@ -241,7 +240,6 @@ AC_DEFUN([gltests_LIBSOURCES], [
 # This macro records the list of files which have been installed by
 # gnulib-tool and may be removed by future gnulib-tool invocations.
 AC_DEFUN([gl_FILE_LIST], [
-  build-aux/git-version-gen
   lib/errno.in.h
   lib/limits.in.h
   lib/stdbool.in.h
@@ -269,7 +267,6 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/inline.m4
   m4/libunistring-base.m4
   m4/limits-h.m4
-  m4/longlong.m4
   m4/multiarch.m4
   m4/off_t.m4
   m4/ssize_t.m4
@@ -277,4 +274,5 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/stdint.m4
   m4/sys_types_h.m4
   m4/wint_t.m4
+  m4/zzgnulib.m4
 ])
