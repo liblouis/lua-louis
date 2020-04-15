@@ -13,6 +13,10 @@ Currently they are highly experimental, pull requests are welcome.
 - lua :: needs to be installed. Any version between 5.1 and 5.4 will do.
 - luarocks :: to build and install the bindings
 
+* Building
+#+BEGIN_SRC shell
+luarocks make lua-louis-0.1-1.rockspec
+#+END_SRC
 
 * Usage
 #+BEGIN_SRC lua
