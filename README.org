@@ -11,6 +11,8 @@ Currently they are highly experimental, pull requests are welcome.
 - liblouis :: needs to be installed. The bindings adapt to the size of
               ~widechar~.
 - lua :: needs to be installed. Any version between 5.1 and 5.4 will do.
+- luarocks :: to build and install the bindings
+
 
 * Usage
 #+BEGIN_SRC lua
