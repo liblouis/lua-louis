@@ -1,0 +1,27 @@
+language: c
+
+sudo: false
+
+env:
+  global:
+    - LUAROCKS=2.3.0
+  matrix:
+    - LUA=lua5.1
+    - LUA=lua5.2
+    - LUA=lua5.3
+
+branches:
+  only:
+    - master
+
+before_install:
+  - source .travis/setenv_lua.sh
+
+install:
+  - luarocks make rockspecs/lua-louis-scm-0.rockspec
+
+script:
+  - lua -e "print(require'liblua-louis'.translateString('en-ueb-g2.ctb', 'Hello World'))"
+
+notifications:
+   irc: "irc.oftc.net#liblouis"
