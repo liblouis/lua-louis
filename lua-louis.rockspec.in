@@ -7,7 +7,8 @@ source = {
 description = {
   summary = "Bindings for liblouis, the Braille translator",
   homepage = "http://github.com/liblouis/@PACKAGE@/",
-  license = "LGPLv3+"
+  license = "LGPLv3+",
+  labels = { "braille", "accessibility" }
 }
 dependencies = {
   "lua >= 5.1"
