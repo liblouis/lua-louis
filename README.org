@@ -22,7 +22,7 @@ luarocks make lua-louis-0.1-1.rockspec
 #+BEGIN_SRC lua
 local louis = require "liblua-louis"
 
-print(louis.translateString("de-ch-g2.ctb", "Guten Tag"))
+print(louis.translateString("de-g2.ctb", "Guten Tag"))
 #+END_SRC
 
 * Todo
