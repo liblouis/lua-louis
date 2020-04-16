@@ -1,9 +1,8 @@
 package="@PACKAGE@"
 version="@VERSION@-1"
 source = {
-  url = "https://github.com/downloads/liblouis/@PACKAGE@/@PACKAGE@-@VERSION@.tar.gz",
-  md5 = "@MD5@",
-  dir = "@PACKAGE@-@VERSION@"
+  url = "https://github.com/liblouis/lua-louis",
+  tag = "v@VERSION@"
 }
 description = {
   summary = "Bindings for liblouis, the Braille translator",
