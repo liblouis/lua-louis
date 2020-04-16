@@ -2,7 +2,7 @@
 AC_PREREQ(2.68)
 
 # Initialise autoconf and automake
-AC_INIT([lua-louis],[0.1],[http://github.com/louis/lua-louis])
+AC_INIT([lua-louis],[0.2],[http://github.com/louis/lua-louis])
 
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])
