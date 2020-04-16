@@ -15,7 +15,7 @@ Currently they are highly experimental, pull requests are welcome.
 
 * Building
 #+BEGIN_SRC shell
-luarocks make lua-louis-0.1-1.rockspec
+luarocks make lua-louis-0.2-1.rockspec
 #+END_SRC
 
 * Usage
