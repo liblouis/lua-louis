@@ -89,7 +89,9 @@ static const struct luaL_Reg louis [] = {
   {NULL, NULL}  /* sentinel */
 };
 
-// provide backwards compat for lua5.1
+/* provide backwards compat for lua5.1 see
+   http://lua-users.org/wiki/CompatibilityWithLuaFive and
+   https://stackoverflow.com/questions/19041215/lual-openlib-replacement-for-lua-5-2#19041283 */
 #if !defined LUA_VERSION_NUM || LUA_VERSION_NUM==501
 /*
 ** Adapted from Lua 5.2.0
