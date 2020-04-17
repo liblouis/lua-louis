@@ -3,8 +3,13 @@ language: c
 services:
   - docker
 
+env:
+  - LUA=lua5.1 LUA_DEV=liblua5.1-dev
+  - LUA=lua5.2 LUA_DEV=liblua5.2-dev
+  - LUA=lua5.3 LUA_DEV=liblua5.3-dev
+
 before_install:
-  - docker build -t lua/louis .
+  - docker build -t lua/louis . --build-arg LUA=$LUA --build-arg LUA_DEV=$LUA_DEV
 
 script:
   - docker run lua/louis /bin/sh -c "eval `luarocks path` && lua -e \"print(require'liblua-louis'.translateString('en-ueb-g2.ctb', 'Hello World'))\""
