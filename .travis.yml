@@ -11,15 +11,12 @@ env:
 before_install:
   - docker build -t lua/louis . --build-arg LUA=$LUA --build-arg LUA_DEV=$LUA_DEV
 
-script:
-  - docker run lua/louis /bin/sh -c "eval `luarocks path` && lua -e \"print(require'liblua-louis'.translateString('en-ueb-g2.ctb', 'Hello World'))\""
-
 branches:
   only:
     - master
 
 script:
-  - lua -e "print(require'liblua-louis'.translateString('en-ueb-g2.ctb', 'Hello World'))"
+  - docker run lua/louis /bin/sh -c "eval `luarocks path` && lua -e \"print(require'liblua-louis'.translateString('en-ueb-g2.ctb', 'Hello World'))\""
 
 notifications:
    irc: "irc.oftc.net#liblouis"
