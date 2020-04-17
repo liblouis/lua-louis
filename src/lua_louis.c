@@ -112,6 +112,4 @@ int luaopen_louis (lua_State *L) {
   lua_newtable(L);
   luaL_setfuncs(L, louis, 0);
   return 1;
-  /* luaL_openlib(L, "louis", louis, 0); */
-  /* return 1; */
 }
