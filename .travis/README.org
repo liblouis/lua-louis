@@ -1,1 +1,0 @@
-Heavily inspired by https://github.com/moteus/lua-travis-example.

@@ -1,28 +1,17 @@
 language: c
 
-sudo: false
+services:
+  - docker
 
-env:
-  global:
-    - LUAROCKS=2.3.0
-  matrix:
-    - LUA=lua5.1
-    - LUA=lua5.2
-    - LUA=lua5.3
+before_install:
+  - docker build -t lua/louis .
+
+script:
+  - docker run lua/louis /bin/sh -c "eval `luarocks path` && lua -e \"print(require'liblua-louis'.translateString('en-ueb-g2.ctb', 'Hello World'))\""
 
 branches:
   only:
     - master
-
-before_install:
-  - source .travis/setenv_lua.sh
-  - sudo apt-get update -qq
-  - sudo apt -y install liblouis-dev liblouis-data
-
-
-install:
-  - ./autogen.sh
-  - luarocks make rockspecs/lua-louis-scm-0.rockspec
 
 script:
   - lua -e "print(require'liblua-louis'.translateString('en-ueb-g2.ctb', 'Hello World'))"
