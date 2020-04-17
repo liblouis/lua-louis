@@ -18,6 +18,7 @@ before_install:
   - source .travis/setenv_lua.sh
 
 install:
+  - ./autogen.sh
   - luarocks make rockspecs/lua-louis-scm-0.rockspec
 
 script:
