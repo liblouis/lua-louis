@@ -16,6 +16,9 @@ branches:
 
 before_install:
   - source .travis/setenv_lua.sh
+  - apt-get update -qq
+  - sudo apt -y install liblouis-dev liblouis-data
+
 
 install:
   - ./autogen.sh
