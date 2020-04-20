@@ -19,5 +19,5 @@ build = {
       "examples"
    },
    build_command = "LUA=$(LUA) CPPFLAGS=-I$(LUA_INCDIR) ./configure --prefix=$(PREFIX) --libdir=$(LIBDIR) --datadir=$(LUADIR) && make clean && make",
-   install_command = "make install"
+   install_command = "sleep 1 && make install"
 }
