@@ -10,10 +10,6 @@ env:
     - LUA=lua5.2
     - LUA=lua5.3
 
-branches:
-  only:
-    - master
-
 before_install:
   - source .travis/setenv_lua.sh
   - sudo apt-get update -qq
