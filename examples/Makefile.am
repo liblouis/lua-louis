@@ -1,1 +1,1 @@
-EXTRADIST = example.lua example.fnl
+EXTRADIST = example.lua example.fnl braillify.lua
