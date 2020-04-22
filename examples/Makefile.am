@@ -1,1 +1,1 @@
-EXTRADIST = test.lua
+EXTRADIST = example.lua example.fnl

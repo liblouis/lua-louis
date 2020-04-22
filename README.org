@@ -25,6 +25,16 @@ local louis = require "liblua-louis"
 print(louis.translateString("de-g2.ctb", "Guten Tag"))
 #+END_SRC
 
+** Fennel
+You can even invoke liblouis from [[https://fennel-lang.org/][the fennel language]], as it compiles
+to lua:
+
+#+BEGIN_SRC fennel
+(let [louis (require :liblua-louis)]
+  (print (louis.translateString "en-ueb-g2.ctb" "Hello World"))
+  (print (louis.version)))
+#+END_SRC
+
 * Todo
   See [[https://github.com/liblouis/lua-louis/issues][the issue list]]. Mostly the bindings should be more complete and
   idiomatic. Pull request are certainly very welcome.
